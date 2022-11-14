@@ -5,9 +5,815 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LPF | Torneo Binance 2022</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="./img/lpf_icon2.png" alt="LPF Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#posiciones">Posiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#promedios">Promedios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#goleadores">Goleadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#asistencias">Asistencias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+    <main>
+        <!-- Posiciones -->
+        <div class="container" id="posiciones">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">POS</th>
+                        <th scope="col">EQUIPO</th>
+                        <th scope="col">PTS</th>
+                        <th scope="col">PJ</th>
+                        <th scope="col">PG</th>
+                        <th scope="col">PE</th>
+                        <th scope="col">PP</th>
+                        <th scope="col">GF</th>
+                        <th scope="col">GC</th>
+                        <th scope="col">DIF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Boca Juniors</td>
+                        <td>52</td>
+                        <td>27</td>
+                        <td>16</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>34</td>
+                        <td>28</td>
+                        <td>+6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Racing Club</td>
+                        <td>50</td>
+                        <td>27</td>
+                        <td>14</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>41</td>
+                        <td>24</td>
+                        <td>+17</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>River Plate</td>
+                        <td>47</td>
+                        <td>27</td>
+                        <td>14</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>43</td>
+                        <td>22</td>
+                        <td>+21</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Huracán</td>
+                        <td>47</td>
+                        <td>27</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td>4</td>
+                        <td>35</td>
+                        <td>21</td>
+                        <td>+14</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Atlético Tucumán</td>
+                        <td>46</td>
+                        <td>27</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>32</td>
+                        <td>22</td>
+                        <td>+10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>San Lorenzo</td>
+                        <td>43</td>
+                        <td>27</td>
+                        <td>10</td>
+                        <td>13</td>
+                        <td>4</td>
+                        <td>33</td>
+                        <td>23</td>
+                        <td>+10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Tigre</td>
+                        <td>43</td>
+                        <td>27</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>41</td>
+                        <td>32</td>
+                        <td>+9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Argentinos Jr.</td>
+                        <td>42</td>
+                        <td>27</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>9</td>
+                        <td>33</td>
+                        <td>24</td>
+                        <td>+9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Gimnasia (LP)</td>
+                        <td>41</td>
+                        <td>27</td>
+                        <td>11</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>26</td>
+                        <td>18</td>
+                        <td>+8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Patronato</td>
+                        <td>40</td>
+                        <td>27</td>
+                        <td>11</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>31</td>
+                        <td>27</td>
+                        <td>+4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Newell's</td>
+                        <td>40</td>
+                        <td>27</td>
+                        <td>11</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>26</td>
+                        <td>22</td>
+                        <td>+4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Defensa y Justicia</td>
+                        <td>40</td>
+                        <td>27</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>29</td>
+                        <td>27</td>
+                        <td>+2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Talleres</td>
+                        <td>35</td>
+                        <td>27</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>28</td>
+                        <td>26</td>
+                        <td>+2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Independiente</td>
+                        <td>35</td>
+                        <td>27</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>31</td>
+                        <td>31</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>Godoy Cruz</td>
+                        <td>35</td>
+                        <td>27</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>25</td>
+                        <td>29</td>
+                        <td>-4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td>Central Córdoba</td>
+                        <td>34</td>
+                        <td>27</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>13</td>
+                        <td>34</td>
+                        <td>37</td>
+                        <td>-3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>Barracas Central</td>
+                        <td>34</td>
+                        <td>27</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>31</td>
+                        <td>37</td>
+                        <td>-6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>Estudiantes (LP)</td>
+                        <td>33</td>
+                        <td>27</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>28</td>
+                        <td>40</td>
+                        <td>-12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19</th>
+                        <td>Platense</td>
+                        <td>32</td>
+                        <td>27</td>
+                        <td>7</td>
+                        <td>11</td>
+                        <td>9</td>
+                        <td>23</td>
+                        <td>25</td>
+                        <td>-2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td>Rosario Central</td>
+                        <td>32</td>
+                        <td>27</td>
+                        <td>7</td>
+                        <td>11</td>
+                        <td>9</td>
+                        <td>24</td>
+                        <td>28</td>
+                        <td>-4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21</th>
+                        <td>Sarmiento (J)</td>
+                        <td>32</td>
+                        <td>27</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>11</td>
+                        <td>27</td>
+                        <td>32</td>
+                        <td>-5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">22</th>
+                        <td>Unión</td>
+                        <td>32</td>
+                        <td>27</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>11</td>
+                        <td>28</td>
+                        <td>36</td>
+                        <td>-8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">23</th>
+                        <td>Arsenal</td>
+                        <td>30</td>
+                        <td>27</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>9</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">24</th>
+                        <td>Banfield</td>
+                        <td>30</td>
+                        <td>27</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>11</td>
+                        <td>23</td>
+                        <td>29</td>
+                        <td>-6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">25</th>
+                        <td>Colón</td>
+                        <td>29</td>
+                        <td>27</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>36</td>
+                        <td>-12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">26</th>
+                        <td>Vélez</td>
+                        <td>28</td>
+                        <td>27</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>30</td>
+                        <td>33</td>
+                        <td>-3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">27</th>
+                        <td>Lanús</td>
+                        <td>21</td>
+                        <td>27</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>16</td>
+                        <td>22</td>
+                        <td>40</td>
+                        <td>-18</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">27</th>
+                        <td>Aldosivi</td>
+                        <td>16</td>
+                        <td>27</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>19</td>
+                        <td>16</td>
+                        <td>48</td>
+                        <td>-32</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Promedios -->
+        <div class="container" id="promedios">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">POS</th>
+                        <th scope="col">EQUIPO</th>
+                        <th scope="col">2020</th>
+                        <th scope="col">2021</th>
+                        <th scope="col">2022</th>
+                        <th scope="col">PTS</th>
+                        <th scope="col">PJ</th>
+                        <th scope="col">PROM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>River Plate</td>
+                        <td>47</td>
+                        <td>75</td>
+                        <td>76</td>
+                        <td>198</td>
+                        <td>103</td>
+                        <td>1.922</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Boca Juniors</td>
+                        <td>51</td>
+                        <td>62</td>
+                        <td>79</td>
+                        <td>193</td>
+                        <td>103</td>
+                        <td>1.873</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Racing Club</td>
+                        <td>42</td>
+                        <td>53</td>
+                        <td>80</td>
+                        <td>175</td>
+                        <td>103</td>
+                        <td>1.699</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Defensa y Justicia</td>
+                        <td>39</td>
+                        <td>59</td>
+                        <td>65</td>
+                        <td>163</td>
+                        <td>103</td>
+                        <td>1.582</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Argentinos Jr.</td>
+                        <td>42</td>
+                        <td>51</td>
+                        <td>67</td>
+                        <td>160</td>
+                        <td>103</td>
+                        <td>1.553</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Tigre</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>63</td>
+                        <td>63</td>
+                        <td>41</td>
+                        <td>1.536</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Vélez</td>
+                        <td>39</td>
+                        <td>70</td>
+                        <td>46</td>
+                        <td>155</td>
+                        <td>103</td>
+                        <td>1.504</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Estudiantes (LP)</td>
+                        <td>30</td>
+                        <td>61</td>
+                        <td>61</td>
+                        <td>152</td>
+                        <td>103</td>
+                        <td>1.475</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Talleres</td>
+                        <td>37</td>
+                        <td>66</td>
+                        <td>46</td>
+                        <td>149</td>
+                        <td>103</td>
+                        <td>1.446</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>San Lorenzo</td>
+                        <td>39</td>
+                        <td>48</td>
+                        <td>58</td>
+                        <td>145</td>
+                        <td>103</td>
+                        <td>1.407</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Independiente</td>
+                        <td>32</td>
+                        <td>58</td>
+                        <td>51</td>
+                        <td>141</td>
+                        <td>103</td>
+                        <td>1.368</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Gimnasia (LP)</td>
+                        <td>24</td>
+                        <td>51</td>
+                        <td>65</td>
+                        <td>140</td>
+                        <td>103</td>
+                        <td>1.359</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Newell's</td>
+                        <td>38</td>
+                        <td>39</td>
+                        <td>63</td>
+                        <td>140</td>
+                        <td>103</td>
+                        <td>1.359</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Huracán</td>
+                        <td>22</td>
+                        <td>51</td>
+                        <td>65</td>
+                        <td>138</td>
+                        <td>103</td>
+                        <td>1.339</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>Barracas Central</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>53</td>
+                        <td>53</td>
+                        <td>41</td>
+                        <td>1.292</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td>Rosario Central</td>
+                        <td>36</td>
+                        <td>50</td>
+                        <td>46</td>
+                        <td>132</td>
+                        <td>103</td>
+                        <td>1.281</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>Colón</td>
+                        <td>21</td>
+                        <td>64</td>
+                        <td>45</td>
+                        <td>130</td>
+                        <td>103</td>
+                        <td>1.262</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>Unión</td>
+                        <td>28</td>
+                        <td>53</td>
+                        <td>49</td>
+                        <td>130</td>
+                        <td>103</td>
+                        <td>1.262</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19</th>
+                        <td>Atlético Tucumán</td>
+                        <td>32</td>
+                        <td>40</td>
+                        <td>57</td>
+                        <td>129</td>
+                        <td>103</td>
+                        <td>1.252</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td>Lanús</td>
+                        <td>36</td>
+                        <td>56</td>
+                        <td>36</td>
+                        <td>128</td>
+                        <td>103</td>
+                        <td>1.242</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21</th>
+                        <td>Banfield</td>
+                        <td>27</td>
+                        <td>47</td>
+                        <td>49</td>
+                        <td>123</td>
+                        <td>103</td>
+                        <td>1.194</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">22</th>
+                        <td>Central Córdoba</td>
+                        <td>26</td>
+                        <td>43</td>
+                        <td>49</td>
+                        <td>118</td>
+                        <td>103</td>
+                        <td>1.145</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">23</th>
+                        <td>Sarmiento (J)</td>
+                        <td>0</td>
+                        <td>36</td>
+                        <td>53</td>
+                        <td>89</td>
+                        <td>79</td>
+                        <td>1.126</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">24</th>
+                        <td>Arsenal</td>
+                        <td>35</td>
+                        <td>33</td>
+                        <td>47</td>
+                        <td>115</td>
+                        <td>103</td>
+                        <td>1.116</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">25</th>
+                        <td>Godoy Cruz</td>
+                        <td>18</td>
+                        <td>46</td>
+                        <td>51</td>
+                        <td>115</td>
+                        <td>103</td>
+                        <td>1.116</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">26</th>
+                        <td>Platense</td>
+                        <td>0</td>
+                        <td>45</td>
+                        <td>42</td>
+                        <td>87</td>
+                        <td>79</td>
+                        <td>1.101</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">27</th>
+                        <td>Patronato</td>
+                        <td>23</td>
+                        <td>37</td>
+                        <td>50</td>
+                        <td>110</td>
+                        <td>103</td>
+                        <td>1.067</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">28</th>
+                        <td>Aldosivi</td>
+                        <td>22</td>
+                        <td>44</td>
+                        <td>36</td>
+                        <td>102</td>
+                        <td>103</td>
+                        <td>0.990</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Goleadores -->
+        <div class="container" id="goleadores">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">EQUIPO</th>
+                        <th scope="col">GOLES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M. Retegui</td>
+                        <td>Tigre</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>F. Cristaldo</td>
+                        <td>Huracán</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>E. Copetti</td>
+                        <td>Racing</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>A. Bareiro</td>
+                        <td>San Lorenzo</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>R. López</td>
+                        <td>Central Córdoba</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>M. Borja</td>
+                        <td>River Plate</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>C. Colmán</td>
+                        <td>Barracas Cental</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>B. Armoa</td>
+                        <td>Tigre</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>R. Ábila</td>
+                        <td>Colón</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>L. Fernandez</td>
+                        <td>Independiente</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>M. Boselli</td>
+                        <td>Estudiantes LP</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Asistencias -->
+        <div class="container" id="asistencias">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">EQUIPO</th>
+                        <th scope="col">ASIST.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M. Ojeda</td>
+                        <td>Godoy Cruz</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>G. Togni</td>
+                        <td>Defensa y Justicia</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>S. Villa</td>
+                        <td>Boca Juniors</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>R. Garro</td>
+                        <td>Talleres</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>I. Ramírez</td>
+                        <td>Central Córdoba</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>F. Colidio</td>
+                        <td>Tigre</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2022. All Rights Reserved</p>
+        <p>Designed by <span class="spanFooter">Martin Marron</span></p>        
+    </footer>
+
+    <!-- JavaScrip -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
