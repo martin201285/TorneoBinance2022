@@ -83,10 +83,28 @@ p {
     text-decoration: none;
 }
 
+.navbar-toggler-icon {
+    font-size: var(--font-md);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
+}
+
 /* ASISTENCIAS */
 
 #asistencias {
     padding-bottom: var(--spacing-lg);
+}
+
+/* ICON */
+
+#upButton {
+    display: none;
+    position: fixed;
+    right: 1.0rem;
+    bottom: 1.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    transition: all 5s;
+    opacity: 60%;
 }
 
 /* FOOTER */
