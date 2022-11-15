@@ -34,12 +34,12 @@ html {
 }
 
 main {
-    padding-top: 9.7rem;
+    padding: 9.7rem var(--spacing-md) 0 var(--spacing-md);
 }
 
 .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 h2 {
@@ -80,7 +80,7 @@ p {
     position: fixed;
     width: 100%;
     box-shadow: 0 0 12px 0 #00000070;
-    padding: 0 var(--spacing-md) 0 var(--spacing-md);
+    padding: 0 var(--spacing-sm) 0 var(--spacing-md);
 }
 
 .navbar-brand {
@@ -192,6 +192,13 @@ footer p {
 
 /* MEDIAS */
 
+@media screen and (max-width: 992px) {
+
+    .navbar {
+        padding-left: var(--spacing-md);
+    }
+}
+
 @media screen and (max-width: 576px) {
     
     main {
@@ -200,8 +207,8 @@ footer p {
     }
 
     .navbar {
-        padding-left: var(--spacing-xs);
-        padding-right: var(--spacing-xs);
+        padding-left: var(--spacing-sm);
+        padding-right: var(--spacing-sm);
     }
 
     .container {
