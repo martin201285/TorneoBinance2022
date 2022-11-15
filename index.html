@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LPF | Torneo Binance 2022</title>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./img/lpf_favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -37,6 +38,7 @@
         </div>
     </nav>    
     <main id="top">
+        <!-- Banner -->
         <figure class="binance_logo container">
             <img src="./img/lpf_icon2.png" alt="LPF Logo image">
         </figure>
@@ -399,8 +401,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        
+        </div>       
         <!-- Promedios -->
         <div class="container" id="promedios">
             <div>
@@ -703,7 +704,6 @@
                 </tbody>
             </table>
         </div>
-
         <!-- Goleadores -->
         <div class="container" id="goleadores">
             <div>
@@ -712,71 +712,253 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">NOMBRE</th>
-                        <th scope="col">EQUIPO</th>
+                        <th class="rowName" scope="col">NOMBRE</th>
+                        <th class="rowName" scope="col">EQUIPO</th>
                         <th scope="col">GOLES</th>
+                        <th scope="col">JUGADA</th>
+                        <th scope="col">CABEZA</th>
+                        <th scope="col">T. LIBRE</th>
+                        <th scope="col">PENAL</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>M. Retegui</td>
-                        <td>Tigre</td>
-                        <td>19</td>
+                        <td class="rowName">M. Retegui</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/tigre.png" alt="Tigre Logo">Tigre</td>
+                        <th scope="row">19</th>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>6</td>
                     </tr>
                     <tr>
-                        <td>F. Cristaldo</td>
-                        <td>Huracán</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>E. Copetti</td>
-                        <td>Racing</td>
-                        <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>A. Bareiro</td>
-                        <td>San Lorenzo</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>R. López</td>
-                        <td>Central Córdoba</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>M. Borja</td>
-                        <td>River Plate</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>C. Colmán</td>
-                        <td>Barracas Cental</td>
+                        <td class="rowName">F. Cristaldo</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/huracan.png" alt="Huracán Logo">Huracán</td>
+                        <th scope="row">14</th>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>0</td>
                         <td>8</td>
                     </tr>
                     <tr>
-                        <td>B. Armoa</td>
-                        <td>Tigre</td>
-                        <td>8</td>
+                        <td class="rowName">E. Copetti</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/racing_club.png" alt="Racing Club Logo">Racing Club</td>
+                        <th scope="row">11</th>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
-                        <td>R. Ábila</td>
-                        <td>Colón</td>
-                        <td>8</td>
+                        <td class="rowName">A. Bareiro</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/san_lorenzo.png" alt="San Lorenzo Logo">San Lorenzo</td>
+                        <th scope="row">10</th>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>3</td>
                     </tr>
                     <tr>
-                        <td>L. Fernandez</td>
-                        <td>Independiente</td>
-                        <td>8</td>
+                        <td class="rowName">R. López</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/central_cordoba.png" alt="Central Córdoba Logo">Central Córdoba</td>
+                        <th scope="row">9</th>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                     <tr>
-                        <td>M. Boselli</td>
-                        <td>Estudiantes LP</td>
+                        <td class="rowName">M. Borja</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/river_plate.png" alt="River Plate Logo">River Plate</td>
+                        <th scope="row">9</th>
                         <td>7</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">C. Colmán</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/barracas_central.png" alt="Barracas Central Logo">Barracas Central</td>
+                        <th scope="row">8</th>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">R. Ábila</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/colon.png" alt="Colón Logo">Colón</td>
+                        <th scope="row">8</th>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">L. Fernandez</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/independiente.png" alt="Independiente Logo">Independiente</td>
+                        <th scope="row">8</th>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">B. Armoa</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/tigre.png" alt="Tigre Logo">Tigre</td>
+                        <th scope="row">8</th>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">L. Rodriguez</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/colon.png" alt="Colón Logo">Colón</td>
+                        <th scope="row">7</th>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">M. Boselli</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/estudiantes_lp.png" alt="Estudiantes Logo">Estudiantes (LP)</td>
+                        <th scope="row">7</th>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">M. Cauteruccio</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/aldosivi.png" alt="Aldosivi Logo">Aldosivi</td>
+                        <th scope="row">6</th>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">G. Verón</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/argentinos_juniors.png" alt="Argentinos Juniors Logo">Argentinos Jr.</td>
+                        <th scope="row">6</th>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">F. Kruspzky</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/arsenal.png" alt="Arsenal Logo">Arsenal</td>
+                        <th scope="row">6</th>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">B. Sepúlveda</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/barracas_central.png" alt="Barracas Central Logo">Barracas Central</td>
+                        <th scope="row">6</th>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">L. Langoni</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/boca_juniors.png" alt="Boca Juniors Logo">Boca Juniors</td>
+                        <th scope="row">6</th>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">A. Martínez</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/central_cordoba.png" alt="Central Córdoba Logo">Central Córdoba</td>
+                        <th scope="row">6</th>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">L. Díaz</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/estudiantes_lp.png" alt="Estudiantes Logo">Estudiantes (LP)</td>
+                        <th scope="row">6</th>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">S. Rodríguez</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/godoy_cruz.png" alt="Godoy Cruz Logo">Godoy Cruz</td>
+                        <th scope="row">6</th>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">M. Ojeda</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/godoy_cruz.png" alt="Godoy Cruz Logo">Godoy Cruz</td>
+                        <th scope="row">6</th>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">L. Benegas</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/independiente.png" alt="Independiente Logo">Independiente</td>
+                        <th scope="row">6</th>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">A. Veliz</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/rosario_central.png" alt="Rosario Central Logo">Rosario Central</td>
+                        <th scope="row">6</th>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">A. Vombergar</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/san_lorenzo.png" alt="San Lorenzo Logo">San Lorenzo</td>
+                        <th scope="row">6</th>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">L. López</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/sarmiento.png" alt="Sarmiento Logo">Sarmiento (J)</td>
+                        <th scope="row">6</th>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td class="rowName">G. Ávalos</td>
+                        <td class="rowName"><img class="teamLogo" src="./img/argentinos_juniors.png" alt="Argentinos Juniors Logo">Argentinos Jr.</td>
+                        <th scope="row">5</th>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>1</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
         <!-- Asistencias -->
         <div class="container" id="asistencias">
             <div>
@@ -824,6 +1006,7 @@
                 </tbody>
             </table>
         </div>
+        <!-- Up Button -->
         <a href="#top"><img src="./img/button_up.png" id="upButton" alt="up button"></a>
     </main>
     <footer>

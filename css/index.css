@@ -19,7 +19,6 @@
     --spacing-sm: 1.6rem;
 }
 
-
 /* NORMALIZE */
 * {
     margin: 0;
@@ -142,7 +141,7 @@ p {
     padding-bottom: var(--spacing-lg);
 }
 
-/* ICON */
+/* UP BUTTON */
 
 #upButton {
     display: none;
