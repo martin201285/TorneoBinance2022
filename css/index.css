@@ -17,6 +17,7 @@
     --spacing-lg: 6.4rem;
     --spacing-md: 3.2rem;
     --spacing-sm: 1.6rem;
+    --spacing-xs: 0.8rem;
 }
 
 /* NORMALIZE */
@@ -33,7 +34,12 @@ html {
 }
 
 main {
-    padding: 9.7rem var(--spacing-md) 0 var(--spacing-md);
+    padding-top: 9.7rem;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 h2 {
@@ -189,8 +195,18 @@ footer p {
 @media screen and (max-width: 576px) {
     
     main {
-        padding-left: var(--spacing-sm);
-        padding-right: var(--spacing-sm);
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
+    }
+
+    .navbar {
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
+    }
+
+    .container {
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
     }
 
     .binance_logo img {
@@ -207,7 +223,7 @@ footer p {
     }
 
     footer {
-        padding-left: var(--spacing-sm);
-        padding-right: var(--spacing-sm);
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
     }
 }
