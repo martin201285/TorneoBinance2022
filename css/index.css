@@ -53,9 +53,19 @@ p {
     margin-bottom: 0;
 }
 
+.table thead th {
+    background: rgb(161, 161, 161);
+    border-bottom: none;
+}
+
 .binance_logo {
     text-align: center;
     padding-top: var(--spacing-lg);
+}
+
+.table td, .table th {
+    padding: 0;
+    vertical-align: middle;
 }
 
 /* NAVBAR */
@@ -101,11 +111,29 @@ p {
     font-size: var(--font-md);
 }
 
+/* MAIN */
+
+.table {
+    text-align: center;
+}
+
+.rowName {
+    text-align: left;
+}
+
+.teamLogo {
+    width: 4rem;
+    height: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top-width: 0;
+}
+
 /* PROMEDIOS */
 
 .desciende {
     color: rgb(175, 2, 2);
-    background-color: rgb(236, 163, 163);
+    /* background-color: rgb(243, 183, 183); */
 }
 
 /* ASISTENCIAS */
@@ -158,17 +186,17 @@ footer p {
         padding-right: var(--spacing-sm);
     }
 
-    .navbar {
-        padding-left: var(--spacing-sm);
-        padding-right: var(--spacing-sm);
-    }
-
     .binance_logo img {
         width: 75%;
     }
 
     th, td {
         font-size: var(--font-xxs);
+    }
+
+    .teamLogo {
+        width: 3rem;
+        height: 3rem;
     }
 
     footer {
